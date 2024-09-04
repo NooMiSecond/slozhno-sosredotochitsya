@@ -1,6 +1,7 @@
 .page {
   font-family: var(--main-font);
   background: var(--bg-color);
+  background-attachment: fixed;
   max-width: 1024px;
   min-width: 375px;
   margin: 0 auto;
@@ -29,7 +30,8 @@
   height: 25px;
   position: absolute;
   float: right;
-  top: 20px; right: 20px;
+  top: 20px;
+  right: 20px;
 }
 
 .arrow-down {
@@ -38,7 +40,8 @@
   width: 25px;
   height: 25px;
   position: absolute;
-  left: 20px; bottom: 20px;
+  left: 20px;
+  bottom: 20px;
 }
 
 .rec {
@@ -56,7 +59,6 @@
 .header__theme-menu-button {
   text-transform: lowercase;
   text-align: center;
-  border: none;
   background: none;
   padding: 3px 12px;
   border: 1px solid transparent;
@@ -274,11 +276,13 @@
   }
 
   .arrow-up {
-    top: 10px; right: 10px;
+    top: 10px;
+    right: 10px;
   }
   
   .arrow-down {
-    left: 10px; bottom: 10px;
+    left: 10px;
+    bottom: 10px;
   }
 
   .header__theme-menu {
@@ -324,7 +328,7 @@
 
   .footer {
     min-height: 668px;
-  } 
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -345,7 +349,7 @@
       border: 1px solid rgba(255, 0, 112, 0.4);
     }
 
-    .content__subtitle  {
+    .content__subtitle {
       color: var(--bg-color);
     }
 
