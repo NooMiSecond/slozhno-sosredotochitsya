@@ -1,1 +1,1 @@
-https://github.com/NooMiSecond/ono-tebe-nado.git
+https://github.com/NooMiSecond/slozhno-sosredotochitsya.git
