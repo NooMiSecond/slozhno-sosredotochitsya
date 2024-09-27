@@ -1,3 +1,40 @@
+a {
+  text-decoration: none;
+  text-shadow: var(--accent-color) 2px 2px;
+  padding: 0;
+  border: 1px solid transparent;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: none;
+  padding: 0;
+  border: 1px solid currentColor;
+}
+
+button:focus-visible {
+  border-bottom: 1px solid currentColor;
+  outline: none;
+}
+
+button:disabled {
+  pointer-events: none;
+  padding: 3px 12px;
+  border: 1px solid currentColor;
+}
+
+a:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+button:hover {
+  border: 1px solid rgba(50, 49, 45, 0.4);
+}
+
 .page {
   font-family: var(--main-font);
   background: var(--bg-color);
@@ -24,8 +61,8 @@
 }
 
 .arrow-up {
-  border-right: 1px solid currentColor;
-  border-top: 1px solid currentColor;
+  border-right: 1px solid var(--arrow-color);
+  border-top: 1px solid var(--arrow-color);
   width: 25px;
   height: 25px;
   position: absolute;
@@ -35,8 +72,8 @@
 }
 
 .arrow-down {
-  border-left: 1px solid currentColor;
-  border-bottom: 1px solid currentColor;
+  border-left: 1px solid var(--arrow-color);
+  border-bottom: 1px solid var(--arrow-color);
   width: 25px;
   height: 25px;
   position: absolute;
@@ -91,12 +128,20 @@
 }
 
 .header__subtitle {
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* align-items: flex-start; */
+  /* padding-right: 20px; */
+  /* padding-top: 51px; */
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  color: var(--text-color);
+  /* color: var(--text-color); */
   max-width: 490px;
   background-color: var(--accent-color);
+  align-self: center;
+  margin-block-end: 83px;
+  margin-inline-start: 50%;
 }
 
 /* content */
@@ -107,7 +152,7 @@
   line-height: 130%;
 }
 
-.content__first-section {
+.content__main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px;
@@ -116,11 +161,12 @@
 
 .content__lead {
   font-weight: 700;
+  font-size: 18px;
   line-height: 130%;
   max-width: 100%;
 }
 
-.content__second-section .content__lead {
+.content__additional .content__lead {
   max-width: 30%;
 }
 
@@ -140,6 +186,7 @@
 
 .content__subtitle-thin {
   font-weight: 400;
+  font-size: 18px;
   line-height: 130%;
   color: var(--text-color);
   background-color: var(--accent-color);
@@ -155,7 +202,7 @@
   margin-block-end: 20px;
 }
 
-.content__second-section__tagline {
+.content__additional__tagline {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -234,6 +281,7 @@
 
   .header__subtitle {
     max-width: 364px;
+    margin-block-end: 142px;
   }
 
   .header__container {
@@ -241,11 +289,11 @@
     padding-top: 42px;
   }
 
-  .content__first-section {
+  .content__main {
     gap: 20px;
   }
 
-  .content__second-section__tagline {
+  .content__additional__tagline {
     display: block;
     margin-block-end: 80px;
   }
@@ -258,6 +306,25 @@
 @media (max-width:376px) {
   .content {
     margin: 0 10px;
+  }
+
+  .header__subtitle {
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* align-items: flex-start; */
+    /* padding-right: 20px; */
+    /* padding-top: 51px; */
+    /* font-weight: 700; */
+    /* font-size: 18px; */
+    /* line-height: 130%; */
+    /* color: var(--text-color); */
+    /* max-width: 490px; */
+    /* background-color: var(--accent-color); */
+    align-self: center;
+    margin-block-end: 83px;
+    /* margin-inline-start: 50%; */
+    margin-inline: 10px;
+    margin-block-end: 25px;
   }
 
   .decorated-zone {
@@ -293,25 +360,25 @@
     max-width: max-content;
   }
 
-  .content__second-section .content__lead {
+  .content__additional .content__lead {
     max-width: 100%;
   }
 
-  .content__first-section {
+  .content__main {
     display: flex;
     gap: 0;
     margin-block-end: 30px;
     flex-direction: column;
   }
 
-  .content__second-section {
+  .content__additional {
     display: flex;
     gap: 0;
     margin-block-end: 30px;
     flex-direction: column;
   }
 
-  .content__second-section__tagline {
+  .content__additional__tagline {
     margin: 0;
   }
 
@@ -364,6 +431,7 @@
     .content__subtitle-thin {
       color: var(--bg-color);
     }
+
     .decorated-zone {
       background: url("../images/cover-image-dark.png");
       background-size: cover;

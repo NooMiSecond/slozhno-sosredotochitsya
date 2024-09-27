@@ -1,6 +1,7 @@
 .page.theme_light {
   --bg-color: #fff1f7;
   --text-color: #353430;
+  --arrow-color: #353430;
   --accent-color: #FF8DCB;
   --title-main-color: #ffc2e6;
   --title-shadow-color: #ff0070;
@@ -37,13 +38,13 @@
   }
 
   .arrow-up {
-    border-right: 1px solid var(--accent-color);
-    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--arrow-color);
+    border-top: 1px solid var(--arrow-color);
   }
 
   .arrow-down {
-    border-left: 1px solid var(--accent-color);
-    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--arrow-color);
+    border-bottom: 1px solid var(--arrow-color);
   }
 
   .rec {
