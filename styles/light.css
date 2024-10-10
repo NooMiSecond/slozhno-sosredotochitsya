@@ -37,16 +37,6 @@
     background-repeat: no-repeat;
   }
 
-  .arrow-up {
-    border-right: 1px solid var(--arrow-color);
-    border-top: 1px solid var(--arrow-color);
-  }
-
-  .arrow-down {
-    border-left: 1px solid var(--arrow-color);
-    border-bottom: 1px solid var(--arrow-color);
-  }
-
   .rec {
     display: none;
   }
