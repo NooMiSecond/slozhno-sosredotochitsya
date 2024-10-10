@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: dark) {
+.page.theme_dark {
   :root {
     --bg-color: #000028;
     --text-color: #f1b2ce;
