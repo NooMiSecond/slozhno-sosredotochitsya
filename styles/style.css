@@ -96,6 +96,7 @@ button:hover {
   padding: 3px 12px;
   border: 1px solid transparent;
   cursor: pointer;
+  color: var(--button-text-color);
 }
 
 .header__theme-menu-list {
@@ -133,6 +134,7 @@ button:hover {
   margin-block-end: 83px;
   margin-inline-start: 50%;
   margin-inline-end: 20px;
+  color: var(--text-color-main);
 }
 
 /* content */
@@ -253,7 +255,7 @@ button:hover {
   text-shadow: var(--title-shadow-color) 2px 2px;
 }
 
-.theme_light{
+.theme_light {
   .rec {
     display: none;
   }
@@ -296,37 +298,6 @@ button:hover {
     box-shadow: 0 0 4px 2px #ff0070;
   }
 }
-
-  .header__theme-menu-button {
-    color: var(--button-text-color);
-  }
-
-  button:hover {
-    border: var(--button-hover-color);
-  }
-
-  .content__subtitle {
-    color: var(--text-color-main);
-  }
-
-  .header__subtitle {
-    color: var(--text-color-main);
-  }
-  
-  .content__accent {
-    color: var(--text-color-second);
-  }
-
-  .content__subtitle-thin {
-    color: var(--text-color-main);
-  }
-
-  .decorated-zone {
-    background: var(--background-picture);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
 
   .rec {
     display: none;
@@ -420,7 +391,7 @@ button:hover {
     margin-block-end: 51px;
     margin-inline-end: 10px;
   }
-  
+
   .content__lead {
     max-width: max-content;
     margin-block-end: 20px;
