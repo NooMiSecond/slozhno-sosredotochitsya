@@ -252,56 +252,12 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: var(--title-shadow-color) 2px 2px;
+  text-shadow: var(--accent-color) 2px 2px;
 }
 
-.theme_light {
-  .rec {
-    display: none;
-  }
+.rec {
+  display: none;
 }
-
-.theme_dark {
-  --bg-color: #000028;
-  --text-color-main: #000028;
-  --text-color-second: #f1b2ce;
-  --text-color-accent: #ff0070;
-  --accent-color: #ff0070;
-  --arrow-color: #ff0070;
-  --title-main-color: #db00ff;
-  --title-shadow-color: #ff0070;
-  --background-picture: url("../images/cover-image-dark.png");
-  --button-text-color: #ff0070;
-  --button-border-color: 1px solid #ff0070;
-  --button-hover-color: 1px solid rgba(255, 0, 112, 0.4);
-  
-  .rec {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    line-height: 139%;
-    color: #ff0070;
-    text-transform: uppercase;
-    top: 20px;
-    right: 48px;
-  }
-
-  .rec::after {
-    content: '';
-    position: absolute;
-    inline-size: 9px;
-    block-size: 9px;
-    margin-inline-start: 43px;
-    border-radius: 100%;
-    background-color: #ff0070;
-    box-shadow: 0 0 4px 2px #ff0070;
-  }
-}
-
-  .rec {
-    display: none;
-  }
 
 @media (max-width: 769px) {
   .decorated-zone {
